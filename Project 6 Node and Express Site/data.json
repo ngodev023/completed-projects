@@ -1,0 +1,45 @@
+{"projects":[
+
+    {
+        "id": 0,
+        "project_name": "A Random Quote Generator",
+        "description": "An HTML application that generates a random quote every 10 seconds, or when prompted—drawing data from a JavaScript array.",
+        "technologies": ["HTML", "JavaScript", "Async Programming"],
+        "live_link": "/",
+        "github_link": "github repo link",
+        "image_urls": ["/static/images/project1_main.png", "/static/images/project1_landscape1.png", "/static/images/project1_landscape2.png", "/static/images/project1_landscape3.png"]
+    },{
+        "id": 1,
+        "project_name": "Data Pagination",
+        "description": "An HTML application that serves employee data from a Javascript array, separating results into pages of nine. Search option allows for filtering.",
+        "technologies": ["JavaScript", "HTML"],
+        "live_link": "/",
+        "github_link": "github repo link",
+        "image_urls": ["/static/images/project2_main.png", "/static/images/project2_landscape1.png", "/static/images/project2_landscape2.png", "/static/images/project2_landscape3.png"]
+    },{
+        "id": 2,
+        "project_name": "Reactive Form",
+        "description": "A customer input form with payment options and reactive guidance features for ease of use.",
+        "technologies": ["HTML", "JavaScript", "Reactive Design"],
+        "live_link": "/",
+        "github_link": "github repo link",
+        "image_urls": ["/static/images/project3_main.png", "/static/images/project3_landscape1.png", "/static/images/project3_landscape2.png", "/static/images/project3_landscape3.png"]
+    },{
+        "id": 3,
+        "project_name": "Phrase Hunter Game",
+        "description": "A JavaScript Application that utilises Object Oriented Programming",
+        "technologies": ["OOP", "HTML", "JavaScript"],
+        "live_link": "/",
+        "github_link": "github repo link",
+        "image_urls": ["/static/images/project4_main.png", "/static/images/project4_landscape1.png", "/static/images/project4_landscape2.png", "/static/images/project4_landscape3.png"]
+    },{
+        "id": 4,
+        "project_name": "Employee Directory",
+        "description": "An AJAX application that makes API requests to a database, rendering responses into interactive modular forms.",
+        "technologies": ["Fetch", "API", "HTML", "JavaScript"],
+        "live_link": "/",
+        "github_link": "github repo link",
+        "image_urls": ["/static/images/project5_main.png", "/static/images/project5_landscape1.png", "/static/images/project5_landscape2.png", "/static/images/project5_landscape3.png"]
+    }
+
+]}

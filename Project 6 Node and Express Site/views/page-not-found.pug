@@ -1,0 +1,10 @@
+extends layout 
+block content 
+    h1 THE PAGE IS NOT FOUND 
+    h1= error.message 
+    h2= error.status 
+    pre= error.stack 
+    nav.nav
+      a(href='/')
+        span &larr;
+        |  Back
