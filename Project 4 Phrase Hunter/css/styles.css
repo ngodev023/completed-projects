@@ -3,6 +3,18 @@
 
 /* Variables */
 
+body{
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+}
+
+#overlay{
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+}
+
 :root {
   --color-win: #78CF82;
   --color-lose: #D94545;
@@ -111,7 +123,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #4ac0d5;
+  background-color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -179,6 +191,7 @@ button {
   color: #FFF;
 }
 
+
 .start {
   background-color: #3a3f58;
 }
@@ -201,4 +214,17 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }

@@ -38,7 +38,7 @@ window.addEventListener('keydown', function(event){
 })
 
 // Personal touch: changing background color ever 3 seconds... for distractions.
-setInterval(()=>{
-    let bgColor = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
-    document.body.style.backgroundColor = bgColor
-}, 3000)
+// setInterval(()=>{
+//     let bgColor = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
+//     document.body.style.backgroundColor = bgColor
+// }, 3000)
