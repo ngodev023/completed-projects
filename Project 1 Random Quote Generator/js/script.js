@@ -38,7 +38,7 @@ let quotes = [{quote: "Frankly, my dear, I don't give a damn.",
                citation: "Apollo 11",
                year: 1969
               },
-              {quote: "Many of life's faiilures are people who did not realize how close they were to success when they gave up.",
+              {quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
                source: "Thomas Edison",
                citation: "From Telegraph to Light Bulb with Thomas Edison",
                year: 1877
