@@ -5,40 +5,40 @@
         "project_name": "A Random Quote Generator",
         "description": "An HTML application that generates a random quote every 10 seconds, or when prompted—drawing data from a JavaScript array.",
         "technologies": ["HTML", "JavaScript", "Async Programming"],
-        "live_link": "/",
-        "github_link": "github repo link",
+        "live_link": "https://ngodev023.github.io/completed-projects/Project%201%20Random%20Quote%20Generator/",
+        "github_link": "https://github.com/ngodev023/completed-projects/tree/main/Project%201%20Random%20Quote%20Generator",
         "image_urls": ["/static/images/project1_main.png", "/static/images/project1_landscape1.png", "/static/images/project1_landscape2.png", "/static/images/project1_landscape3.png"]
     },{
         "id": 1,
         "project_name": "Data Pagination",
         "description": "An HTML application that serves employee data from a Javascript array, separating results into pages of nine. Search option allows for filtering.",
         "technologies": ["JavaScript", "HTML"],
-        "live_link": "/",
-        "github_link": "github repo link",
+        "live_link": "https://ngodev023.github.io/completed-projects/Project%202%20Data%20Pagination/",
+        "github_link": "https://github.com/ngodev023/completed-projects/tree/main/Project%202%20Data%20Pagination",
         "image_urls": ["/static/images/project2_main.png", "/static/images/project2_landscape1.png", "/static/images/project2_landscape2.png", "/static/images/project2_landscape3.png"]
     },{
         "id": 2,
         "project_name": "Reactive Form",
         "description": "A customer input form with payment options and reactive guidance features for ease of use.",
         "technologies": ["HTML", "JavaScript", "Reactive Design"],
-        "live_link": "/",
-        "github_link": "github repo link",
+        "live_link": "https://ngodev023.github.io/completed-projects/Project%203%20form/",
+        "github_link": "https://github.com/ngodev023/completed-projects/tree/main/Project%203%20form",
         "image_urls": ["/static/images/project3_main.png", "/static/images/project3_landscape1.png", "/static/images/project3_landscape2.png", "/static/images/project3_landscape3.png"]
     },{
         "id": 3,
         "project_name": "Phrase Hunter Game",
         "description": "A JavaScript Application that utilises Object Oriented Programming",
         "technologies": ["OOP", "HTML", "JavaScript"],
-        "live_link": "/",
-        "github_link": "github repo link",
+        "live_link": "https://ngodev023.github.io/completed-projects/Project%204%20Phrase%20Hunter/",
+        "github_link": "https://github.com/ngodev023/completed-projects/tree/main/Project%204%20Phrase%20Hunter",
         "image_urls": ["/static/images/project4_main.png", "/static/images/project4_landscape1.png", "/static/images/project4_landscape2.png", "/static/images/project4_landscape3.png"]
     },{
         "id": 4,
         "project_name": "Employee Directory",
         "description": "An AJAX application that makes API requests to a database, rendering responses into interactive modular forms.",
         "technologies": ["Fetch", "API", "HTML", "JavaScript"],
-        "live_link": "/",
-        "github_link": "github repo link",
+        "live_link": "https://ngodev023.github.io/completed-projects/Project%205%20Public%20API%20Request/",
+        "github_link": "https://github.com/ngodev023/completed-projects/tree/main/Project%205%20Public%20API%20Request",
         "image_urls": ["/static/images/project5_main.png", "/static/images/project5_landscape1.png", "/static/images/project5_landscape2.png", "/static/images/project5_landscape3.png"]
     }
 

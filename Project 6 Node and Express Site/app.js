@@ -12,7 +12,7 @@ app.use(routes)
 app.use((req, res, next)=>{
     const err = new Error('The page you are looking for does not exist!');
     err.status = 404;
-    console.log(err.message)
+
     next(err);
 })
 
@@ -24,6 +24,7 @@ app.use((err, req, res, next)=>{
         console.log(err.status, err.message);
         res.render('error', {error: err})
     } else {
+        console.log(err.status, err.message)
         res.render('page-not-found', {error: err})
     }
 })

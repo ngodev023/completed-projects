@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 Books
+  p
+  a.button(href='/books/new') Create New Book
+  p 
+  input(id="search" placeholder="Search...")
+  button(type="button" id="search-button") Search
+  script
+    | var list = !{JSON.stringify(books)} 
+  table
+    thead
+      tr
+        th Title
+        th Author
+        th Genre
+        th Year
+    tbody#bookList
+  div.pagination
+    ul.link-list
+  script(src='javascripts/script.js')
+  // a script within the public folder will handle construction of the book items, keeping them in a div, and handle their pagination in denominations of 5 per page.

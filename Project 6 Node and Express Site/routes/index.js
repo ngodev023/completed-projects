@@ -19,9 +19,10 @@ router.get('/project/:id', (req, res, next)=>{
         const project = projects[projectId]
         res.render('project',{project})
     } else {
+        // will display custom error if user tries to access a project that doesn't exist... yet.
         const err = new Error();
         err.status = 404;
-        err.message = `Currently, there are only ${projects.length} projects to display.`
+        err.message = `Currently, there are only ${projects.length} project(s) to display.`
         next(err);
     }
 })
