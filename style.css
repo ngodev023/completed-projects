@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Lato:100";
 
+
+
 :root {
     display: flex;
     justify-content: center;
@@ -39,31 +41,47 @@ a:active { text-decoration: none; }
         "sidebar main main main"
         "sidebar main main main"
         "sidebar showcase showcase showcase";
-    grid-gap: .2rem;
+    grid-gap: .2rem;    
+}
+
+.container div {
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    overflow: scroll;
+    border: 2px solid gray;
+}
+
+.container * {
+    background: transparent;
 }
 
 .nav {
-    background: #a7ffeb;
     display: flex;
     justify-content: space-between;
     grid-area: nav;
+    margin-top: -5px;
 }
 
 .nav a {
     border: none;
     margin-right: 10px;
-    margin-top: -10px;
 }
 
 
-main {
-    display: inline-block;
+#main {
+    display: flex;
     grid-area: main;
+    justify-content: center;
+    align-content:center;
+    padding-left: 0px;
+    padding-top: 0px;
 }
 
 iframe{
     width: 100%;
     height: 100%;
+    border: none !important;
 }
 
 #sidebar {
@@ -83,24 +101,21 @@ iframe{
     margin-bottom: 5px;  
     margin-right: 5px;
     font-size: 15px;
-    text-align: center;
     font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 .showCase > div > span {
     border: none;
     display:inline-block;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
-.container *{
-    padding-left: 5px;
-    padding-top: 5px;
-    border-radius: 5px;
-    overflow: scroll;
-    border: 2px solid gray;
-    background:transparent;
-}
+
 
 @media only screen and (max-width:550px) {
     .container{
@@ -124,4 +139,8 @@ iframe{
     100% {
         background-position: 0 50%;
     }
+}
+
+.viewing {
+    background-color: rgb(15, 182, 15) !important;
 }

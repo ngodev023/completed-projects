@@ -1,35 +1,53 @@
 const data = [
     {
-        id: 10,
-        title:"FullStack React App w/ Restful API"},
-    {
-        id: 9,
-        title:"Restful API",   
+        id: "project1",
+        title: "Random Quote Generator",
+        displayable: true
     },
     {
-        id: 8,
-        title:"Sql Library Manager"},
+        id: "project2",
+        title: "Data Pagination",
+        displayable: true,   
+    },
     {
-        id: 7,
-        title:"React App Gallery"},
+        id: "project3",
+        title: "Form Construction",
+        displayable: true,
+    },
     {
-        id: 6,
-        title:"Node Express Site"},
+        id: "project4",
+        title: "Phrase Hunter Game",
+        displayable: true,
+    },
     {
-        id: 5,
-        title:"Public API Request"},
+        id: "project5",
+        title:"Public API Requests",
+        displayable: true,
+    },
     {
-        id: 4,
-        title:"Phrase Hunter Game"},
+        id: "project6",
+        title: "Node and Express Site",
+        displayable: false,
+    },
     {
-        id: 3,
-        title:"Form Construction"},
+        id: "project7",
+        title:"React Gallery App",
+        displayable: false,
+    },
     {
-        id: 2,
-        title:"Data Pagination"},
+        id: "project8",
+        title:"Sql Library Manager",
+        displayable: false,
+    },
     {
-        id: 1,
-        title:"Random Quote Generator"
+        id: "project9",
+        title:"Restful API",
+        displayable: false,
+    },
+    {
+        id: "project10",
+        title:"FullStack React App w/ Restful API",
+        displayable: false,
     }
 ];
 
