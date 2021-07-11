@@ -139,7 +139,7 @@ iframe{
 }
 
 .viewing {
-    background-color: rgba(248, 121, 116, 0.781) !important;
+    background-color: rgba(202, 105, 247, 0.781) !important;
 }
 
 .sourceBtn{
@@ -155,3 +155,4 @@ iframe{
     border: none;
     cursor: pointer;
 }
+

@@ -19,7 +19,7 @@
         </div>
        <div class="animation-area">
            <div class="container">
-                <div id="main"><iframe src="https://project10-react-app-api.netlify.app/"></iframe></div>
+                <div id="main"><h3 id="loading">Loading</h3><iframe onload="loaded()" src="https://project10-react-app-api.netlify.app/"></iframe></div>
                 <div id="sidebar">Select a Project from Below to View Details</div>
                 <label id="choose">Check Out Some of My Other Projects</label>
                 <div class="showCase"></div>
@@ -51,6 +51,14 @@
                 b.style.background = randColor();
             });
         }, 90000);
+
+        function loaded() {
+            let iframe = document.querySelector('iframe');
+            
+                document.getElementById("loading").style.display = "none";
+            
+        }
+
     </script>
 
 

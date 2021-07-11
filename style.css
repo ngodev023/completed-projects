@@ -131,7 +131,7 @@ a:active { text-decoration: none; }
     }
     100% {
         transform: translateY(-1000px) rotate(90deg);
-        opacity: .5;
+        opacity: .3;
     }
 }
 

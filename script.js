@@ -32,7 +32,7 @@ function handleScreen (id) {
             document.querySelector('iframe').src = realId.host;
             populateDetails(realId);
         } else {
-            document.querySelector('#main').innerHTML = `<iframe src="${realId.host}"/>`;
+            document.querySelector('#main').innerHTML = `<h3 id="loading">Loading</h3><iframe onload="loaded()" src="${realId.host}"></iframe>`;
             populateDetails(realId);
         }
     } else {
