@@ -86,8 +86,8 @@ function printQuote () {
   let quoteBox = document.getElementById('quote-box');
   quoteBox.innerHTML= `<p class="quote">${quoteObject.quote}</p>
   <p class="source">${quoteObject.source}<span class="citation">${quoteObject.citation}</span><span class="year">${quoteObject.year}</span></p>`;
-  let bgColor = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
-  document.body.style.backgroundColor = bgColor
+  // let bgColor = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`
+  // document.body.style.backgroundColor = bgColor
 }
 
 /**
