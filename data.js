@@ -63,8 +63,8 @@ const data = [
     {
         id: "project7",
         title:"React Gallery App",
-        displayable: false,
-        host: "projects/project7",
+        displayable: true,
+        host: "https://project7-react-gallery.netlify.app/",
         details: {
             message: "My first attempt at working with React. <p>Challenging for sure.</p> <p>Click on the predefined search options, or type something into the filter and see what the API returns.</p> <p>Have fun!</p>",
             sourceCode: "https://github.com/ngodev023/completed-projects/tree/main/projects/project7"
@@ -73,8 +73,8 @@ const data = [
     {
         id: "project8",
         title:"Sql Library Manager",
-        displayable: false,
-        host: "projects/project8",
+        displayable: true,
+        host: "https://project8-library-manager.herokuapp.com/books",
         details: {
             message: "What I've been looking forward to throughout the length of the course: learning how to work with databases. This express application uses sql to store and manipulate data, which users can input into a mock library management user interface.",
             sourceCode: "https://github.com/ngodev023/completed-projects/tree/main/projects/project8"

@@ -71,13 +71,17 @@ a:active { text-decoration: none; }
 
 .box-area li {
 	position: absolute;
-	display: block;
+	display: flex;
 	list-style: none;
 	width: 25px;
 	height: 25px;
 	background: rgba(247, 239, 196, 0.938);
 	animation: animate 20s linear infinite;
 	bottom: -150px;
+    color:rgba(0, 0, 0, 0.884);
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 .box-area li:nth-child(1){
     left: 86%;
@@ -87,28 +91,30 @@ a:active { text-decoration: none; }
 }
 .box-area li:nth-child(2){
     left: 12%;    
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     animation-delay: 1.5s;
     animation-duration: 10s;
+    
 }
 .box-area li:nth-child(3){
     left: 70%;
-    width: 100px;
+    width: 160px;
     height: 100px;
     animation-delay: 5.5s;
 }
 .box-area li:nth-child(4){
     left: 42%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 120px;
     animation-delay: 0s;
     animation-duration: 15s;
+    font-size: 40px;
 }
 .box-area li:nth-child(5){
     left: 65%;
-    width: 40px;
-    height: 40px;    
+    width: 120px;
+    height: 60px;    
     animation-delay: 0s;
 }
 .box-area li:nth-child(6){
@@ -120,12 +126,12 @@ a:active { text-decoration: none; }
 
 @keyframes animate {
     0%{
-        transform: translateY(0) rotate(0deg);
+        transform: translateY(0) rotate(-90deg);
         opacity: 1;
     }
     100% {
-        transform: translateY(-800px) rotate(360deg);
-        opacity: 0;
+        transform: translateY(-1000px) rotate(90deg);
+        opacity: .5;
     }
 }
 

@@ -78,6 +78,7 @@ iframe{
     border: none;
     margin-left: 5px;
     border-bottom: 2px gray solid;
+    padding-right: 5px;
 
 }
 #sidebar p{
