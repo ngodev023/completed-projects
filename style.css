@@ -1,137 +1,137 @@
-@import "https://fonts.googleapis.com/css?family=Lato:100";
 
-
-
-:root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(-45deg, #ffffff, #9cf4fa, #23A6D5,#23D5AB);
-    background-size: 400% 400%;
-    font-family: "Lato", Arial, sans-serif;
-    position:relative;
-    animation: change 50s ease-in-out infinite;
+*{
+    margin:0;
+    padding: 0;
 }
 
-a {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
+body{
+    font-family: 'Baloo 2', cursive;
+}
+
+.banner-text{
+    width:100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.banner-text ul{
+    height: 50px;
+    float: right;
+}
+
+.banner-text ul li {
+    display: inline-block;
+    padding: 10px 10px;
     text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 a:link { 
-    text-decoration: none; 
+    text-decoration: none;
+    color: white;
 }
 
-a:visited { text-decoration: none; }
+a:visited { 
+    text-decoration: none; 
+    color: white;
+}
 
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
-.container {
-    display: grid;
-    height: 95vh;
-    width: 95vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2em 1.5fr 1.2fr 1fr;
-    grid-template-areas: 
-        "nav nav nav nav"
-        "sidebar main main main"
-        "sidebar main main main"
-        "sidebar showcase showcase showcase";
-    grid-gap: .2rem;    
+.banner-text h2{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 20%;
+    cursor: default;
 }
 
-.container div {
-    padding-left: 5px;
-    padding-top: 5px;
-    border-radius: 5px;
-    overflow: scroll;
-    border: 2px solid gray;
+.animation-area{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    width: 100%;
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: change 180s ease-in-out infinite;
 }
 
-.container * {
-    background: transparent;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    grid-area: nav;
-    margin-top: -5px;
-}
-
-.nav a {
-    border: none;
-    margin-right: 10px;
-}
-
-
-#main {
-    display: flex;
-    grid-area: main;
-    justify-content: center;
-    align-content:center;
-    padding-left: 0px;
-    padding-top: 0px;
-}
-
-iframe{
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: none !important;
+    overflow:hidden;
 }
 
-#sidebar {
-    grid-area: sidebar;
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(247, 239, 196, 0.938);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+    left: 12%;    
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;    
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
 }
 
-.showCase {
-    grid-area: showcase;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;  
-}
-
-.showCase > div {
-    flex: 0 0 auto;
-    width: 200px;
-    margin-bottom: 5px;  
-    margin-right: 5px;
-    font-size: 15px;
-    font-family:sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-}
-
-.showCase > div > span {
-    border: none;
-    display:inline-block;
-    font-size: 1rem;
-}
-
-
-
-@media only screen and (max-width:550px) {
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 2em 2fr 3fr 2fr;
-        grid-template-areas: 
-            "nav"
-            "sidebar"
-            "main"
-            "showcase";
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
     }
 }
 
 @keyframes change {
     0% {
-        background-position: 0 50%;;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
@@ -139,8 +139,4 @@ iframe{
     100% {
         background-position: 0 50%;
     }
-}
-
-.viewing {
-    background-color: rgb(15, 182, 15) !important;
 }

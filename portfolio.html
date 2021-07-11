@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+        <title>Animated Background with Pure CSS and HTML</title>
+        <link rel="stylesheet" href="portfolioStyle.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner-text">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+       <div class="animation-area">
+           <div class="container">
+                <div id="main"><iframe src="https://project10-react-app-api.netlify.app/"></iframe></div>
+                <div id="sidebar">Select a Project from Below to View Details</div>
+                <label id="choose">Check Out Some of My Other Projects</label>
+                <div class="showCase"></div>
+           </div>
+           <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+       </div>
+       <script>
+        var box = Array.from(document.querySelector('.box-area').children);
+        function randColor () {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        box.forEach((b) => {
+            b.style.background = randColor();
+        });
+        setInterval(() => {
+            box.forEach((b) => {
+                b.style.background = randColor();
+            });
+        }, 90000);
+    </script>
+
+
+
+
+       <script src="data.js"></script>
+       <script src="script.js"></script>
+    </body>
+</html>

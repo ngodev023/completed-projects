@@ -26,14 +26,41 @@ function viewClick (e) {
 }
 
 function handleScreen (id) {
-    if(data[id.slice(7)-1].displayable) {
+    let realId = data[id.slice(7)-1];
+    if(realId.displayable) {
         if(document.querySelector('iframe')){
-            document.querySelector('iframe').src = "projects/"+id;
+            document.querySelector('iframe').src = realId.host;
+            populateDetails(realId);
         } else {
-            document.querySelector('#main').innerHTML = `<iframe src="projects/${id}"/>`
+            document.querySelector('#main').innerHTML = `<iframe src="${realId.host}"/>`;
+            populateDetails(realId);
         }
     } else {
-        document.querySelector('#main').textContent = "Sorry nothing to see here"
-
+        document.querySelector('#main').textContent = "Sorry, there's nothing to display at the moment... See Details for more information.";
+        document.getElementById('sidebar').innerHTML = `
+        <h3>Details</h3>
+        Name: ${realId.title}
+        <div style="border: none;">
+            <p>${realId.details.message}</p>
+        </div>
+        <button class="sourceBtn" style="background: green;"><a target="_blank" href=${realId.host}>Live Link</a></button>
+        <button class="sourceBtn"><a target="_blank" href="${realId.details.sourceCode}">Source Code</a></button>
+        `;
     }
 }
+
+function populateDetails(data){
+    let sideBar = document.getElementById('sidebar');
+    let detailBlock = `
+        <h3>Details</h3>
+        Name: ${data.title}
+        <div style="border: none;">
+            <p>${data.details.message}</p>
+        </div>
+        <button class="sourceBtn" style="background: green;"><a target="_blank" href=${data.host}>Live Link</a></button>
+        <button class="sourceBtn"><a target="_blank" href=${data.details.sourceCode}>Source Code</a></button>
+        `;
+    sideBar.innerHTML = detailBlock;
+}
+
+populateDetails(data[9]);

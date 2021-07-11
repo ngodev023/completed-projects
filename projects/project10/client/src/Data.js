@@ -4,7 +4,7 @@ export default class Data {
   // method for sending requests to REST api
   api(path, method = 'GET', body = null, requiresAuth = false, credentials = null) {
     
-    const url = 'http://localhost:5000/api' + path;
+    const url = 'https://test-app023.herokuapp.com/api' + path;
   
     const options = {
       method,

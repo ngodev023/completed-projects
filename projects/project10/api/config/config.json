@@ -1,7 +1,7 @@
 {
   "development": {
     "dialect": "sqlite",
-    "storage": "fsjstd-restapi.db"
+    "storage": "restAPI.db"
   },
   "test": {
     "username": "root",
@@ -11,10 +11,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "sql3423831",
+    "password": "T5Ms6SWL6X",
+    "database": "sql3423831",
+    "host": "sql3.freesqldatabase.com",
     "dialect": "mysql"
   }
 }

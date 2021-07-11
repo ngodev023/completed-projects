@@ -1,26 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Portfolio</title>
-    </head>
-    <body>
-       <div class="container">
-           <div class="nav">
-               <a href="#">Home</a>
-               <a href="#">About</a>
-               <a href="#">Repo</a>
-               <a href="#">Future</a>
-           </div>
-           <div id="main"><iframe src="projects/project1"></iframe></div>
-           <div id="sidebar">Sidebar</div>
-           <div class="showCase">
-                
-           </div>
-       </div>
-       <script src="data.js"></script>
-       <script src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <title>Welcome to my page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner-text">
+        <ul>
+            <li>About</li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        <h2>Welcome to My Resume</h2>
+    </div>
+    <div class="animation-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script>
+        var box = Array.from(document.querySelector('.box-area').children);
+        function randColor () {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        box.forEach((b) => {
+            b.style.background = randColor();
+        });
+        setInterval(() => {
+            box.forEach((b) => {
+                b.style.background = randColor();
+            });
+        }, 90000);
+    </script>
+</body>
 </html>
