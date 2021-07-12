@@ -9,9 +9,9 @@ body{
     overflow: hidden;
   }
   .box{
-    width: 450px;
-    height: 400px;
-    background: rgba(73, 72, 72, 0.4);
+    width: 500px;
+    height: 500px;
+    background: rgba(73, 72, 72, 0.801);
     padding: 20px;
     text-align: center;
     margin: auto;
@@ -21,6 +21,8 @@ body{
     z-index: 1;
     position: relative;
     overflow: scroll;
+    border-radius: 20px;
+    font-size: 20px;
   }
   
   .box p{
