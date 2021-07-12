@@ -15,7 +15,7 @@ const data = [
         displayable: true,
         host: "projects/project2",
         details: {
-            message: "This project was supposed to teach me the basic skills in JavaScript programming. DOM manipulation, etc...",
+            message: "This project was supposed to teach me the basic skills in JavaScript programming: Mainly DOM manipulation, and performing calculations.",
             sourceCode: "https://github.com/ngodev023/completed-projects/tree/main/projects/project2"
         }   
     },
@@ -56,7 +56,7 @@ const data = [
         displayable: true,
         host: "index.html",
         details: {
-            message: "You've actually been wandering around inside project 6 all along.",
+            message: "This project was inteded to act as my eventual resume. The website is bland and can't really compare to what I have now, but at least I learned how to work with Express, middleware, and templating.",
             sourceCode: "https://github.com/ngodev023/completed-projects/tree/main/projects/project6"
         }
     },
@@ -66,7 +66,7 @@ const data = [
         displayable: true,
         host: "https://project7-react-gallery.netlify.app/",
         details: {
-            message: "My first attempt at working with React. <p>Challenging for sure.</p> <p>Click on the predefined search options, or type something into the filter and see what the API returns.</p> <p>Have fun!</p>",
+            message: "My first attempt at working with React. <p>Challenging for sure.</p> <p>Click on the predefined search options, or type something into the filter and see what the API returns. If you want, you can download the source file, create a config file and provide your own api key, and then run it on your local machine.</p> <p>Have fun!</p>",
             sourceCode: "https://github.com/ngodev023/completed-projects/tree/main/projects/project7"
         }
     },

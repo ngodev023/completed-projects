@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="about.css">
+        <title>Personal WebSite</title>
+    </head>
+    <body>
+        <div class="banner-text">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="certification.html">Certification</a></li>
+            </ul>
+        </div>
+        <div class="box">
+            <h1>
+                Story
+            </h1>
+            <h5>
+                Job Coach
+            </h5>
+            <p>In 2018, I found employment as a Job Coach, a position where I provided job support for individuals with developmental disabilities. My shifts consisted of a checkup with my client's employer, identifying any need for improvement, followed then by the supervision period, where I would provide my client with oversight, encouragement, directions, and if needed, direct assistance. Towards the end of each shift, it was my responsibility to summarize my report, provide metrics, and then submit them into the organization's database.</p>
+            <h5>Scheduler</h5>
+            <p>
+                My first interaction with JavaScript came after I was promoted from Job Coach to Scheduler. The position of being a scheduler did not require any formal knowledge about coding. The organization provided me with a Google account, and my work was mostly accomplished on a google sheet document. As the organization expanded, so did the complexities of scheduling--everyone agreed that scheduling was the life-blood of the organization, the main route through which revenue flowed--and it became clear that google sheets was not going to cut it. A product consultant once concluded that hospital grade scheduling might be necessary in order to meet our needs. But while our needs were established, they were not met in a timely manner. I believe it was at this point that the proverbial saying about "Necessity being the mother of Invention" came to root.
+            </p>
+            <h5>App Script Tinkerer</h5>
+                <p>
+                    Imagine servicing over 90 clients, half of whom have variable working schedules that change each week. Now imagine overseeing a small army of about 50 coaches, most of whom are working another job, and who naturally have variable schedules that could also change on a weekly basis.
+                    Now imagine having to find ways to match up clients and coaches in order to make sure each client receives adequate coverage. Then imagine that your boss tells you he'd like to see some consistency amongst client-and-coach relationships, despite their variable schedules.
+                    Also, if you still have room in your panic meter, imagine that certain clients cannot be overly covered--lest the organization suffers losses. It's safe to say that the job was critically difficult, but that wasn't the worst part. The worst part was knowing that despite our efforts, we couldn't seem to find a system in the market that could viably replace a simple Google Sheet Spreadsheet.
+                    But as it would turn out, we didn't have to... I discovered that a Google Sheet had something called an App Script, which allows you to go beyond the limitations of its built-in formulas. 
+                </p>
+            <h5>Programmer</h5>
+                <p>
+                    Almost two years went by. Google's App Script managed to keep us afloat. But my head was getting bloated, and not just from the stresses of the job, but also from the influx of Javascript knowledge, which I had taken upon myself to study, and utilize to help the organization satisfy its mandates.
+                    By this point, I had built a mock scheduling system to help "Automate" the process of scheduling. I had also, for the fun of it, produced a method to automate mileage claims for our coaches, something each coach had to do individually before then. I was tired, and something was beginning to draw me as well.
+                    Covid-19 struck in March of 2020. The timing was suspicious; I had just resigned.
+                </p>
+            <h5>Aftermath</h5>
+                <p>
+                    The organization wanted to retain my service on a consulting capacity. We finally parted ways in August of 2020. Stuck at home, I dove further into coding, consuming a plethora of tutorials on Youtube. By April of 2021, I had determined that it might be a good idea to find a community, and also get some form of credentials. I enrolled in TreeHouse's FullStack Web Developer Program, and graduated 2 months later.
+                    Feel free to visit the 'Portfolio Page to check out some of the work I've done on TreeHouse.
+                </p>
+        </div>
+        <ul class="box-area">
+            <li>Vue</li>
+            <li>OOP</li>
+            <li>ExpressJs</li>
+            <li>ReactJs</li>
+            <li>NodeJs</li>
+            <li>API</li>
+        </ul>
+
+        <script>
+            var box = Array.from(document.querySelector('.box-area').children);
+            function randColor () {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+            box.forEach((b) => {
+                b.style.background = randColor();
+            });
+            setInterval(() => {
+                box.forEach((b) => {
+                    b.style.background = randColor();
+                });
+            }, 90000);
+        </script>
+    </body>
+</html>
