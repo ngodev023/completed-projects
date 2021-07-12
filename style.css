@@ -146,3 +146,10 @@ a:active { text-decoration: none; }
         background-position: 0 50%;
     }
 }
+
+#certificate{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
